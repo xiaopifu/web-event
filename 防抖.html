@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="/assets/lib/jquery.js"></script> -->
+</head>
+
+<body>
+    <input type="text">
+    <script>
+        var input = document.querySelector('input')
+        const fn1 = function (fn,wait) {
+            var timer = null
+            if (timer !== null) {
+                clearTimeout(timer)
+                timer = setTimeout(fn2, wait)
+            }
+        }
+
+        function fn2(){
+                    console.log(input.value(),'123');
+
+        }
+        input.addEventListener('keyup', fn1(fn2,1000))
+        
+    </script>
+</body>
+
+</html>
